@@ -1,0 +1,104 @@
+---
+layout: "@/layouts/Article.astro"
+title: "Components"
+description: "This article explains how to create and use Vue components in Astro."
+---
+
+import { SITE_TITLE } from "@/consts";
+import MyComponent from "@/components/MyComponent.vue";
+import ChangerText from '@/components/ChangerText.vue';
+
+## Components
+
+### Création d'un Composant Vue
+
+Créez un nouveau fichier dans le dossier `src/components`, par exemple `MyComponent.vue` :
+
+```text
+src/
+├── components/
+    └── Header.astro
+    └── Button.jsx
+    └── MyComponent.vue
+```
+
+Dans ce nouveau composant, ajoutez le code suivant :
+
+```vue
+<template>
+    <div>
+      <h2>Hello from Vue!</h2>
+    </div>
+  </template>
+  
+  <script>
+  export default {
+    name: 'MyComponent',
+  };
+  </script>
+  
+  <style scoped>
+  </style>
+```
+
+### Utilisation d'un Composant Vue dans une Page Astro
+
+Créez ou modifiez une page Astro pour inclure votre composant Vue. Par exemple, dans `src/pages/index.astro` :
+
+```astro
+---
+import MyComponent from '../components/MyComponent.vue';
+---
+
+<html>
+  <head>
+    <title>Astro avec Vue</title>
+  </head>
+  <body>
+    <h1>Bienvenue sur Astro avec Vue</h1>
+    <MyComponent />
+  </body>
+</html>
+```
+
+### Utilisation de `client:load` pour le Composant Vue
+
+Astro vous permet de spécifier comment et quand vos composants doivent être rendus. Pour charger un composant Vue uniquement sur le client, utilisez la directive `client:load`. Par exemple :
+
+Créez un nouveau fichier ColorPicker.vue :
+
+```vue
+<template>
+  <div>
+    <input type="text" v-model="color" />
+    <p>{{ color }}</p>
+  </div>
+</template>
+<script setup>
+import { ref } from "vue";
+const color = ref("green");
+</script>
+
+<style scoped></style>
+```
+
+Inclure votre nouveau composant Vue dans `src/pages/index.astro` :
+
+```astro
+---
+import ChangerText from '../components/ChangerText.vue';
+---
+
+<html>
+  <head>
+    <title>Astro avec Vue</title>
+  </head>
+  <body>
+    <h1>Bienvenue sur Astro avec Vue</h1>
+    <MyComponent />
+    <ChangerText client:load />
+  </body>
+</html>
+```
+
+Dans cet exemple, `ColorPicker` sera chargé et hydrate le composant JavaScript immédiatement au chargement de la page.

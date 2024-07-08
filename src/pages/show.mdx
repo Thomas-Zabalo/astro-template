@@ -1,0 +1,89 @@
+---
+layout: "@/layouts/Article.astro"
+title: "Setup"
+description: "About the setup process"
+---
+import Counter from "@/components/Counter.vue"
+import Button from "@/components/Button.vue"
+
+Parfait ! Créons un showroom avec plusieurs exemples de composants Vue. Nous allons définir quelques composants Vue et les intégrer dans une page showroom Astro.
+
+### 1. Créez des Composants Vue
+
+#### `Button.vue`
+
+```vue
+<template>
+  <button @click="onClick">{{ label }}</button>
+</template>
+
+<script>
+export default {
+  props: {
+    label: {
+      type: String,
+      required: true,
+    },
+  },
+  methods: {
+    onClick() {
+      alert('Button clicked!');
+    },
+  },
+};
+</script>
+
+<style scoped>
+button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+}
+</style>
+```
+<Button client:load/>
+
+#### `Counter.vue`
+
+```vue
+<template>
+  <div>
+    <h2>Counter: {{ count }}</h2>
+    <button @click="increment">Increment</button>
+  </div>
+</template>
+
+<script>
+export default {
+  data() {
+    return {
+      count: 0,
+    };
+  },
+  methods: {
+    increment() {
+      this.count++;
+    },
+  },
+};
+</script>
+
+<style scoped>
+div {
+  margin-top: 20px;
+}
+button {
+  padding: 10px 20px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+}
+</style>
+```
+
+<Counter client:load />

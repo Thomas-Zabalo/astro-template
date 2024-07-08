@@ -1,0 +1,107 @@
+---
+layout: "@/layouts/Article.astro"
+title: "Setup"
+description: "About the setup process"
+---
+import { SITE_TITLE } from "@/consts";
+
+## Commencer un nouveau projet 
+
+### Prérequis
+
+- Node.js version 14.0 ou supérieure
+- npm ou yarn installé
+
+### Étapes d'installation
+
+#### 1. Créez un nouveau projet Astro
+
+Utilisez la commande suivante pour créer un nouveau projet Astro :
+
+```bash
+npm create astro@latest
+```
+
+Suivez les instructions à l'écran pour configurer votre projet.
+
+#### 2. Accédez à votre projet
+
+```bash
+cd votre-nom-de-projet
+```
+
+#### 3. Ajoutez l'intégration de Vue
+
+Utilisez la commande suivante pour ajouter l'intégration de Vue à votre projet Astro :
+
+```bash
+npx astro add vue
+```
+
+#### 4. Configurez l'intégration de Vue
+
+Modifiez votre fichier `astro.config.mjs` pour inclure l'intégration de Vue :
+
+```javascript
+import { defineConfig } from 'astro/config';
+import vue from '@astrojs/vue';
+
+export default defineConfig({
+  integrations: [vue()],
+});
+```
+> [Integration Vue | Docs](https://docs.astro.build/en/guides/integrations-guide/vue/)
+
+### Structure du Projet
+
+Répertoires et fichiers
+Astro s’appuie sur une disposition des dossiers propre à chaque projet. La racine de chaque projet Astro doit inclure les répertoires et fichiers suivants :
+
+`src/*` - Le code source de votre projet (composants, pages, styles, etc…)
+
+`public/*` - Tout ce qui n’est pas du code et/ou des fichiers qui n’ont pas à être traités (polices d’écritures, icônes, etc…)
+
+`package.json` - Le manifeste de votre projet.
+
+`astro.config.mjs` - Un fichier de configuration d’Astro (recommandé)
+
+`tsconfig.json` - Un fichier de configuration TypeScript. (recommandé)
+
+```text
+public/
+├── robots.txt
+├── favicon.svg
+└──image.png
+
+src/
+├── components/
+│   └── Header.astro
+│   └── Button.jsx
+├── layouts/
+│   └── LayoutBase.astro
+├── pages/
+│   └── index.astro
+│   └── post/
+│       └── post1.md 
+│       └── post2.mdx
+├── styles/
+│   └── global.css
+├── astro.config.mjs
+├── package.json
+└── tsconfig.json
+```
+
+> [Structure Projet | Astro](https://docs.astro.build/fr/basics/project-structure/)
+
+#### 5. Démarrez le serveur de développement
+
+Utilisez la commande suivante pour démarrer le serveur de développement :
+
+```bash
+npm run dev
+```
+
+#### 6. Accédez à votre projet
+
+Ouvrez votre navigateur et accédez à `http://localhost:3000` pour voir votre projet Astro avec Vue en action.
+

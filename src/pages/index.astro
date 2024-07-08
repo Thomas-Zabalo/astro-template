@@ -1,0 +1,55 @@
+---
+import Layout from "@/layouts/Base.astro";
+---
+
+<Layout>
+
+  <p>
+    <em>
+  Ceci est une template pour apprendre principalement Astro avec l'intégration de Vue
+    </em>
+  </p>
+
+  <p>
+    <a
+      href="https://docs.astro.build/fr/getting-started/"
+      target="_blank"
+    >
+    Documentation
+      <span class="material-icons-sharp dir">open_in_new</span>
+    </a>
+  </p>
+
+  </p>
+</Layout>
+
+<style>
+  ul {
+    margin-block-start: var(--sp-s);
+    list-style: disc;
+    padding-inline-start: 1em;
+  }
+
+  h2 {
+    color: var(--color-theme);
+    margin-block-start: var(--sp-l);
+  }
+
+  em {
+    display: block;
+    font-style: normal;
+    font-size: 1.3em;
+    margin-block-end: var(--sp-m);
+  }
+
+  .start {
+    display: block;
+    width: fit-content;
+    padding: 0.5em;
+    border-radius: 0.5em;
+    background: var(--color-main);
+    color: var(--color-base);
+    text-decoration: none;
+    letter-spacing: 0.05em;
+  }
+</style>

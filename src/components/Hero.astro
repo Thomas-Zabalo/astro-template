@@ -9,3 +9,11 @@ const { name, speciality } = Astro.props;
 
 <h1>{name}</h1>
 <span class="badge">{speciality}</span>
+
+
+<style>
+    .badge{
+        background-color: var(--color-speciality);
+        padding: var(--sp-xs)
+    }
+</style>

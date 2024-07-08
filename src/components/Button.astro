@@ -1,0 +1,33 @@
+---
+
+---
+
+<div class="flex justify-center">
+    <a href="/works/">
+        <button class="btn">My portfolio</button>
+    </a>
+</div>
+
+<style>
+    .btn {
+        position: relative; /* Ajout d'une position relative */
+        overflow: hidden; /* Pour cacher le débordement */
+    }
+    .btn::before {
+        content: '';
+        position: absolute;
+        top: 100%; /* Déplacez complètement l'arrière-plan en dessous du bouton */
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(
+            transparent 60%,
+            color-mix(in srgb, var(--color-theme) 20%, transparent) 40%
+        );
+        transition: top 0.3s ease; /* Ajout de la transition */
+    }
+    .btn:hover::before {
+        top: 0; /* Déplacez l'arrière-plan vers le haut */
+    }
+</style>
+

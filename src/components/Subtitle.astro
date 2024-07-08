@@ -1,0 +1,43 @@
+---
+interface Props {
+    title?: string;
+}
+
+const { title } = Astro.props;
+---
+
+<h2>
+    <em>
+        <strong>{title}</strong>
+    </em>
+</h2>
+
+<style is:global>
+    h2 {
+        color: var(--color-theme);
+        margin-block-start: var(--sp-m);
+    }
+    em {
+        display: block;
+        position: relative;
+        font-style: normal;
+        font-size: 1.3em;
+        margin-block-end: var(--sp-m);
+    }
+    strong{
+        position: relative;
+        padding-right: var(--sp-s);
+    }
+    strong::after{
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 10px;
+        right: 0;
+        bottom: 0;
+        background: linear-gradient(
+            transparent 60%,
+            color-mix(in srgb, var(--color-theme) 20%, transparent) 40%
+        );
+    }
+</style>

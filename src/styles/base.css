@@ -1,0 +1,76 @@
+/* basic page style */
+
+:lang(ar) {
+  * { letter-spacing: 0 !important; }
+}
+
+:root {
+  @media (prefers-color-scheme: dark) {
+    --color-speciality: hsl(224, 10%, 23%);;
+    --color-theme: #1aefba;
+    --color-accent: #17bc24;
+    --color-ambient: #3d573f;
+    --color-base: hsl(224, 10%, 10%);;
+    --color-main: #faf6f6;
+    --color-caution: #FFAA2B;
+  }
+  --sp-l: 64px;
+  --sp-m: 32px;
+  --sp-s: 16px;
+  --sp-xs: 4px;
+  @media (width < 480px) {
+    --sp-l: 48px;
+    --sp-m: 16px;
+    --sp-s: 8px;
+    --sp-xs: 4px;
+  }
+
+  color: var(--color-main);
+  background-color: var(--color-base);
+  accent-color: var(--color-theme);
+
+  background-size: 16px 16px;
+
+  line-height: 1.6;
+  font-weight: 500;
+  font-size: 18px;
+  font-family: "Noto Sans", system-ui, "SF Pro Text", -apple-system, BlinkMacSystemFont, sans-serif;
+  @media (width < 480px) {
+    font-size: 16px;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+button,
+input,
+label {
+  line-height: 1.4;
+}
+
+p {
+  margin-block-start: 0.8em;
+}
+
+p a {
+  color: var(--color-theme);
+  text-decoration: underline;
+}
+
+a,
+button {
+  transition: 0.2s ease-out;
+  &:hover,
+  &:active {
+    transition: 0.2s ease-out;
+  }
+}
+
+svg,
+path {
+  fill: currentColor;
+  aspect-ratio: 1;
+}
+

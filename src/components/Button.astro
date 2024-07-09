@@ -2,32 +2,13 @@
 
 ---
 
+
 <div class="flex justify-center">
-    <a href="/works/">
-        <button class="btn">My portfolio</button>
-    </a>
+    <a
+        href="/contact"
+        class="inline-flex items-center justify-center px-6 py-2 font-serif text-sm leading-tight italic text-main bg-main border border-main rounded-3xl transition hover:bg-muted hover:bg-slate-700"
+        >Get in Touch</a>
 </div>
 
 <style>
-    .btn {
-        position: relative; /* Ajout d'une position relative */
-        overflow: hidden; /* Pour cacher le débordement */
-    }
-    .btn::before {
-        content: '';
-        position: absolute;
-        top: 100%; /* Déplacez complètement l'arrière-plan en dessous du bouton */
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background: linear-gradient(
-            transparent 60%,
-            color-mix(in srgb, var(--color-theme) 20%, transparent) 40%
-        );
-        transition: top 0.3s ease; /* Ajout de la transition */
-    }
-    .btn:hover::before {
-        top: 0; /* Déplacez l'arrière-plan vers le haut */
-    }
 </style>
-

@@ -1,19 +1,23 @@
 ---
-interface Props {
-    name ?: String,
-    speciality ?: String,
-}
-
-const { name, speciality } = Astro.props;
 ---
 
-<h1>{name}</h1>
-<span class="badge">{speciality}</span>
+<section class="w-full flex flex-col gap-8">
+    <h1
+        class="text-3xl leading-tight font-serif font-medium sm:text-5xl sm:leading-tight"
+    >
+    Showcasing My Work: A Journey in Web Development
+    </h1>
+
+    <figure>
+        <img
+            class="w-full"
+            src="/public/hero.jpg"
+            loading="lazy"
+            decoding="async"
+            alt=""
+        />
+        <figcaption class="mt-1.5 text-xs sm:text-sm"></figcaption>
+    </figure>
+</section>
 
 
-<style>
-    .badge{
-        background-color: var(--color-speciality);
-        padding: var(--sp-xs)
-    }
-</style>

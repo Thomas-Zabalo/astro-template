@@ -8,7 +8,8 @@
   @media (prefers-color-scheme: dark) {
     --color-speciality: hsl(224, 10%, 23%);;
     --color-theme: #1aefba;
-    --color-accent: #17bc24;
+    --color-button: #1aef5a;
+    --color-accent: #67bc17;
     --color-ambient: #3d573f;
     --color-base: hsl(224, 10%, 10%);;
     --color-main: #faf6f6;
@@ -51,6 +52,7 @@ label {
 }
 
 p {
+  text-align: justify;
   margin-block-start: 0.8em;
 }
 

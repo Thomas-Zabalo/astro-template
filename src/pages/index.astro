@@ -8,114 +8,153 @@ import Button from "@components/Button.astro";
 
 <Layout title="Welcome to Astro.">
 	<main>
-		<Hero name="Thomas" speciality="Web Developper" />
+		<Hero />
 
-		<Subtitle title="A propos" />
+		<Subtitle title="About" />
 		<p>
-			Praesent malesuada mi nisi, quis tempus magna venenatis ut.
-			Suspendisse tempor sem at scelerisque congue. Curabitur mollis, mi
-			id molestie finibus, metus sem sagittis nunc, euismod feugiat orci
-			neque non lorem. Aenean sollicitudin erat eu molestie tempus. Nunc
-			ac eros elementum, fermentum lacus at, pellentesque mauris.
-			Suspendisse eros neque, interdum euismod consectetur convallis,
-			porttitor at massa. Phasellus a ultrices arcu. Donec viverra, lorem
-			in pellentesque euismod, libero justo gravida nibh, non ultricies
-			justo purus ultrices est.
+			Welcome to my portfolio website! I am passionate about creating
+			innovative solutions that solve real-world problems. My journey in
+			web development has been marked by a commitment to excellence and
+			continuous learning. I thrive in collaborative environments where
+			creativity and technical expertise come together to build remarkable
+			digital experiences.
 		</p>
 		<p>
-			Ut at interdum dui. Donec ut ante ex. Maecenas id ex eget nibh
-			consequat accumsan. Proin semper semper dui nec feugiat. Donec
-			cursus neque id aliquet finibus. Morbi facilisis turpis nibh, nec
-			dictum orci dictum nec. In hac habitasse platea dictumst. Maecenas
-			mollis turpis vitae turpis bibendum, vitae tristique arcu eleifend.
+			Throughout my career, I have embraced new technologies and
+			methodologies to deliver high-quality products. From designing
+			intuitive user interfaces to optimizing backend systems, I strive to
+			achieve both aesthetic appeal and functional efficiency. I believe
+			in the power of technology to transform industries and improve
+			lives.
+		</p>
+		<Quote
+			text="Code is like humor. When you have to explain it, it’s bad."
+		/>
+		<Button />
 
-			<Quote
-				text="Every new day is a blank canvas waiting for the brush strokes of your dreams and desires."
-				color="dd"
+		<Subtitle title="Mes compétences" />
+		<div class="skills justify-center flex">
+			<img
+				class="skills__img"
+				width="46"
+				height="46"
+				alt="C#"
+				src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/csharp/csharp-original.svg"
 			/>
-			<Button />
+			<img
+				class="skills__img"
+				width="46"
+				height="46"
+				alt="DotNetCore"
+				src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dotnetcore/dotnetcore-original.svg"
+			/>
+			<img
+				class="skills__img"
+				width="46"
+				height="46"
+				alt="TypeScript"
+				src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg"
+			/>
+			<img
+				class="skills__img"
+				width="46"
+				height="46"
+				alt="Angular"
+				src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/angular/angular-original.svg"
+			/>
+			<img
+				class="skills__img"
+				width="46"
+				height="46"
+				alt="Bootstrap"
+				src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bootstrap/bootstrap-original.svg"
+			/>
+			<img
+				class="skills__img"
+				width="46"
+				height="46"
+				alt="CSS"
+				src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg"
+			/>
+			<img
+				class="skills__img"
+				width="46"
+				height="46"
+				alt="HTML"
+				src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg"
+			/>
+			<img
+				class="skills__img"
+				width="46"
+				height="46"
+				alt="JavaScript"
+				src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg"
+			/>
+			<img
+				class="skills__img"
+				width="46"
+				height="46"
+				alt="Git"
+				src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg"
+			/>
+		</div>
+		<Subtitle title="Projects" />
+		<div class="projects">
+			<a
+				class:list={["flex justify-between items-start gap-8 group"]}
+				href={`/projects/`}
+			>
+				<div class="grow">
+					<a
+						href=""
+						class="hover:underline text-xl leading-tight font-serif font-medium group-hover:underline group-hover:decoration-dashed group-hover:underline-offset-4 group-hover:decoration-1 sm:text-2xl"
+					>
+						Blogify
+					</a>
 
-			<Subtitle title="Mes compétences" />
-			<div class="skills center">
-				<img
-					class="skills__img"
-					width="46"
-					height="46"
-					alt="C#"
-					src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/csharp/csharp-original.svg"
-				/>
-				<img
-					class="skills__img"
-					width="46"
-					height="46"
-					alt="DotNetCore"
-					src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dotnetcore/dotnetcore-original.svg"
-				/>
-				<img
-					class="skills__img"
-					width="46"
-					height="46"
-					alt="TypeScript"
-					src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg"
-				/>
-				<img
-					class="skills__img"
-					width="46"
-					height="46"
-					alt="Angular"
-					src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/angular/angular-original.svg"
-				/>
-				<img
-					class="skills__img"
-					width="46"
-					height="46"
-					alt="Bootstrap"
-					src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bootstrap/bootstrap-original.svg"
-				/>
-				<img
-					class="skills__img"
-					width="46"
-					height="46"
-					alt="CSS"
-					src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg"
-				/>
-				<img
-					class="skills__img"
-					width="46"
-					height="46"
-					alt="HTML"
-					src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg"
-				/>
-				<img
-					class="skills__img"
-					width="46"
-					height="46"
-					alt="JavaScript"
-					src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg"
-				/>
-				<img
-					class="skills__img"
-					width="46"
-					height="46"
-					alt="Git"
-					src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg"
-				/>
-			</div>
-			<Subtitle title="Interest" />
-			<p>
-				Ut at interdum dui. Donec ut ante ex. Maecenas id ex eget nibh
-				consequat accumsan. Proin semper semper dui nec feugiat. Donec
-				cursus neque id aliquet finibus. Morbi facilisis turpis nibh,
-				nec dictum orci dictum nec. In hac habitasse platea dictumst.
-				Maecenas mollis turpis vitae turpis bibendum, vitae tristique
-				arcu eleifend.
-			</p>
-		</p>
+					<div class="mt-1 text-sm leading-normal">
+						Intuitive blogging platform with advanced content
+						management and social interaction features.
+					</div>
+				</div>
+				<div
+					class="font-serif italic opacity-0 transition sm:inline-flex sm:gap-1 sm:items-center sm:shrink-0 group-hover:opacity-100"
+				>
+					View Project
+				</div>
+			</a>
+
+			<a
+				class:list={["flex justify-between items-start gap-8 group"]}
+				href={`/projects/`}
+			>
+				<div class="grow">
+					<a
+						href=""
+						class="hover:underline text-xl leading-tight font-serif font-medium group-hover:underline group-hover:decoration-dashed group-hover:underline-offset-4 group-hover:decoration-1 sm:text-2xl"
+					>
+						E-commerce Plus
+					</a>
+
+					<div class="mt-1 text-sm leading-normal">
+						Robust e-commerce site offering a smooth and secure
+						shopping experience, integrating online payment and
+						order management features.
+					</div>
+				</div>
+				<div
+					class="font-serif italic opacity-0 transition sm:inline-flex sm:gap-1 sm:items-center sm:shrink-0 group-hover:opacity-100"
+				>
+					View Project
+				</div>
+			</a>
+		</div>
 	</main>
 </Layout>
 
 <style>
 	p::first-letter {
+		text-transform: capitalize;
 		font-size: 1.5rem;
 		font-weight: bold;
 		color: var(--color-theme);

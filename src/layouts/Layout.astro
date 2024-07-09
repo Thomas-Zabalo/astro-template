@@ -5,12 +5,12 @@ interface Props {
 
 const { title } = Astro.props;
 
-import Header from "@components/Header.astro";
+import Header from "@components/Nav.astro";
 import "@styles/global.css";
 ---
 
 <!doctype html>
-<html lang="fr">
+<html lang="en">
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="description" content="Astro description" />
@@ -26,6 +26,7 @@ import "@styles/global.css";
 		</main>
 	</body>
 </html>
+
 <style is:global>
 	:root {
 		--accent: 136, 58, 234;

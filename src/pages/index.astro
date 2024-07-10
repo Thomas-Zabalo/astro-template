@@ -2,14 +2,16 @@
 import Layout from "@layouts/Layout.astro";
 import Hero from "@components/Hero.astro";
 import Subtitle from "@components/Subtitle.astro";
-import Quote from "@components/Quote.astro";
 import Button from "@components/Button.astro";
 import Card from '@components/Card.astro';
 import { getCollection } from "astro:content";
-const allProjects = await getCollection("projects");
+const projects = await getCollection("projects");
+const lastprojects = projects.slice(0, 4);
+const blogs = await getCollection("blogs");
+const lastblogs = blogs.slice(0, 4);
 ---
 
-<Layout title="Welcome to Astro.">
+<Layout title="Welcome to Astro." description="e">
 	<main>
 		<Hero />
 
@@ -30,9 +32,6 @@ const allProjects = await getCollection("projects");
 			in the power of technology to transform industries and improve
 			lives.
 		</p>
-		<Quote
-			text="Code is like humor. When you have to explain it, it’s bad."
-		/>
 		<Button />
 
 		<Subtitle title="Skills" />
@@ -102,12 +101,33 @@ const allProjects = await getCollection("projects");
 			/>
 		</div>
 		<Subtitle title="Projects" />
-		{allProjects.map((card) => <Card 
-            url={`/projects/${card.slug}/`} 
-            image={card.data.image.src} 
-            title={card.data.title} 
-            body={card.data.description}
-        />)}
+		<ul role="list" class="grid gap-8 grid-cols-1">
+			{
+				lastprojects.map((project) => (
+					<Card
+						url={`/blogs/${project.slug}/`}
+						image={project.data.image.src}
+						title={project.data.title}
+						body={project.data.description}
+						date={project.data.date}
+					/>
+				))
+			}
+		</ul>
+		<Subtitle title="blog" />
+		<ul role="list" class="grid gap-8 grid-cols-1">
+			{
+				lastblogs.map((blog) => (
+					<Card
+						url={`/blogs/${blog.slug}/`}
+						image={blog.data.image.src}
+						title={blog.data.title}
+						body={blog.data.description}
+						date={blog.data.date}
+					/>
+				))
+			}
+		</ul>
 	</main>
 </Layout>
 

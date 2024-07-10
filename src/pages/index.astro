@@ -4,6 +4,9 @@ import Hero from "@components/Hero.astro";
 import Subtitle from "@components/Subtitle.astro";
 import Quote from "@components/Quote.astro";
 import Button from "@components/Button.astro";
+import Card from '@components/Card.astro';
+import { getCollection } from "astro:content";
+const allProjects = await getCollection("projects");
 ---
 
 <Layout title="Welcome to Astro.">
@@ -32,7 +35,7 @@ import Button from "@components/Button.astro";
 		/>
 		<Button />
 
-		<Subtitle title="Mes compétences" />
+		<Subtitle title="Skills" />
 		<div class="skills justify-center flex">
 			<img
 				class="skills__img"
@@ -99,56 +102,12 @@ import Button from "@components/Button.astro";
 			/>
 		</div>
 		<Subtitle title="Projects" />
-		<div class="projects">
-			<a
-				class:list={["flex justify-between items-start gap-8 group"]}
-				href={`/projects/`}
-			>
-				<div class="grow">
-					<a
-						href=""
-						class="hover:underline text-xl leading-tight font-serif font-medium group-hover:underline group-hover:decoration-dashed group-hover:underline-offset-4 group-hover:decoration-1 sm:text-2xl"
-					>
-						Blogify
-					</a>
-
-					<div class="mt-1 text-sm leading-normal">
-						Intuitive blogging platform with advanced content
-						management and social interaction features.
-					</div>
-				</div>
-				<div
-					class="font-serif italic opacity-0 transition sm:inline-flex sm:gap-1 sm:items-center sm:shrink-0 group-hover:opacity-100"
-				>
-					View Project
-				</div>
-			</a>
-
-			<a
-				class:list={["flex justify-between items-start gap-8 group"]}
-				href={`/projects/`}
-			>
-				<div class="grow">
-					<a
-						href=""
-						class="hover:underline text-xl leading-tight font-serif font-medium group-hover:underline group-hover:decoration-dashed group-hover:underline-offset-4 group-hover:decoration-1 sm:text-2xl"
-					>
-						E-commerce Plus
-					</a>
-
-					<div class="mt-1 text-sm leading-normal">
-						Robust e-commerce site offering a smooth and secure
-						shopping experience, integrating online payment and
-						order management features.
-					</div>
-				</div>
-				<div
-					class="font-serif italic opacity-0 transition sm:inline-flex sm:gap-1 sm:items-center sm:shrink-0 group-hover:opacity-100"
-				>
-					View Project
-				</div>
-			</a>
-		</div>
+		{allProjects.map((card) => <Card 
+            url={`/projects/${card.slug}/`} 
+            image={card.data.image.src} 
+            title={card.data.title} 
+            body={card.data.description}
+        />)}
 	</main>
 </Layout>
 

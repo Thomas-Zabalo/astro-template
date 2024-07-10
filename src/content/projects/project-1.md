@@ -7,6 +7,8 @@ image:
   alt: "Project Image"
 ---
 
+![image](https://github.com/Thomas-Zabalo/astro-template/assets/150163380/83e6756d-d912-49d5-974f-f69aa311b630)
+
 # Awesome Project
 
 Welcome to the documentation for my awesome project. This project is designed to address specific challenges and demonstrate my capabilities in web development.

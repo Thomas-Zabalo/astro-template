@@ -1,0 +1,26 @@
+---
+interface Props {
+    author: string;
+    date: string;
+    img: string;
+}
+
+const { author, date, img } = Astro.props;
+---
+
+<div class="flex w-full flex-wrap gap-4 justify-center my-6">
+    <div class="flex gap-1 mb-auto">
+        <figure class="overflow-hidden rounded-full size-7">
+            <img
+                alt="Web Reaper avatar"
+                decoding="async"
+                height="105"
+                loading="lazy"
+                src={img}
+                width="100"
+                class="object-cover"
+            />
+        </figure><div class="my-auto opacity-80 ml-2">{author}</div>
+    </div><span>•</span>
+    <time class="my-auto opacity-80 h-full" datetime={date}>{date}</time>
+</div>

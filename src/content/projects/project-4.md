@@ -11,15 +11,15 @@ image:
 
 Discover our educational platform designed to provide an interactive learning experience with advanced course management features.
 
-## Objectives
+> "Education is the passport to the future. This platform empowers learners and educators with innovative tools for effective online education."
 
-The main objectives of our educational platform project are:
+## **Objectives**
 
-1. **Interactive Learning:** Enhance learning through engaging multimedia content and interactive exercises.
-2. **Course Management:** Streamline course creation, management, and assessment processes.
-3. **Scalability:** Scale platform to accommodate growing user base and diverse educational content.
+- **Interactive Learning:** Enhance learning through engaging multimedia content and interactive exercises.
+- **Course Management:** Streamline course creation, management, and assessment processes.
+- **Scalability:** Scale platform to accommodate growing user base and diverse educational content.
 
-## Features
+## **Features**
 
 ### Key Features
 
@@ -34,45 +34,36 @@ The main objectives of our educational platform project are:
 - **Personalized Learning Paths:** Recommend courses based on user interests and learning history.
 - **Accessibility Features:** Ensure accessibility compliance with screen reader support and adjustable text sizes.
 
-## Technology Stack
+## **Technology Stack**
 
 ### Languages and Frameworks
 
-- **Frontend:** React.js, Redux, Bootstrap
-- **Backend:** Node.js, Express.js, MongoDB
-- **Real-Time Features:** WebSocket for real-time interactions
+- **Frontend:** `React.js`, `Redux`, `Bootstrap`
+- **Backend:** `Node.js`, `Express.js`, `MongoDB`
+- **Real-Time Features:** `WebSocket` for real-time interactions
 
 ### Tools and Libraries
 
 - **Video Integration:** Integration with video hosting platforms for multimedia content
 - **LMS Integration:** Integration with Learning Management Systems for course content management
 
-## Architecture
+## **Architecture**
 
 ### System Architecture
 
 The platform follows a modular architecture with the following components:
 
-- **Frontend Client:** React components for interactive UI
-- **Backend Services:** Node.js APIs for data handling and integration
-- **Database Service:** MongoDB for storing course content and user data
+- **Frontend Client:** `React` components for interactive UI
+- **Backend Services:** `Node.js` APIs for data handling and integration
+- **Database Service:** `MongoDB` for storing course content and user data
 
 ### Design Patterns
 
 - **Component-Based UI:** Reusable UI components for consistent user experience
 - **RESTful APIs:** Standard API design for communication between frontend and backend
 
-## Screenshots
+## **Additional Resources**
 
-![Screenshot 1](/images/educational-platform-screenshot1.jpg)
-![Screenshot 2](/images/educational-platform-screenshot2.jpg)
-
-## Additional Resources
-
-- **GitHub Repository:** Access the codebase on [GitHub](https://github.com/your-project).
+- **GitHub Repository**: Explore the code and contribute to the project on [GitHub](https://github.com/Thomas-Zabalo/astro-template).
 - **Documentation:** Comprehensive documentation available for platform setup and usage guidelines.
-
-## Conclusion
-
-Thank you for exploring our educational platform. We believe in empowering learners and educators with innovative tools for effective online education.
 

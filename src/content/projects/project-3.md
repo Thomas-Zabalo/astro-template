@@ -11,15 +11,15 @@ image:
 
 Explore the documentation for our health tracking app, designed to help users monitor their health metrics and achieve fitness goals effectively.
 
-## Objectives
+> "Health is wealth. This app ensures you stay on top of your health metrics and achieve your fitness goals."
 
-The primary objectives of the health tracking app project include:
+## **Objectives**
 
-1. **Personal Health Monitoring:** Track daily activities, exercise routines, and nutritional intake.
-2. **Goal Setting:** Set fitness goals and track progress over time.
-3. **User Engagement:** Provide motivational features to encourage healthy habits.
+- **Personal Health Monitoring:** Track daily activities, exercise routines, and nutritional intake.
+- **Goal Setting:** Set fitness goals and track progress over time.
+- **User Engagement:** Provide motivational features to encourage healthy habits.
 
-## Features
+## **Features**
 
 ### Key Features
 
@@ -34,45 +34,36 @@ The primary objectives of the health tracking app project include:
 - **Reminder Notifications:** Set reminders for workouts, hydration, and meal times.
 - **Sync Across Devices:** Sync data seamlessly across mobile devices.
 
-## Technology Stack
+## **Technology Stack**
 
 ### Languages and Frameworks
 
-- **Mobile App:** React Native, Expo
-- **Backend:** Node.js, Express.js, PostgreSQL
-- **Analytics:** Firebase Analytics for user behavior tracking
+- **Mobile App:** `React Native`, `Expo`
+- **Backend:** `Node.js`, `Express.js`, `PostgreSQL`
+- **Analytics:** `Firebase Analytics` for user behavior tracking
 
 ### Tools and Libraries
 
-- **Authentication:** Firebase Authentication for secure user login
-- **Push Notifications:** Firebase Cloud Messaging for real-time notifications
+- **Authentication:** `Firebase Authentication` for secure user login
+- **Push Notifications:** `Firebase Cloud Messaging` for real-time notifications
 
-## Architecture
+## **Architecture**
 
 ### System Architecture
 
 The app follows a client-server architecture with the following components:
 
-- **Mobile App Client:** React Native app for iOS and Android
-- **Backend Service:** Node.js APIs for data synchronization and business logic
-- **Database Service:** PostgreSQL for storing user health data
+- **Mobile App Client:** `React Native` app for iOS and Android
+- **Backend Service:** `Node.js` APIs for data synchronization and business logic
+- **Database Service:** `PostgreSQL` for storing user health data
 
 ### Design Patterns
 
 - **Redux for State Management:** Centralized state management for efficient data flow
 - **Material Design:** UI components following Google's Material Design guidelines
 
-## Screenshots
+## **Additional Resources** 
 
-![Screenshot 1](/images/health-app-screenshot1.jpg)
-![Screenshot 2](/images/health-app-screenshot2.jpg)
-
-## Additional Resources
-
-- **GitHub Repository:** Access the source code on [GitHub](https://github.com/your-project).
+- **GitHub Repository**: Explore the code and contribute to the project on [GitHub](https://github.com/Thomas-Zabalo/astro-template).
 - **Documentation:** Detailed documentation available for app setup and usage instructions.
-
-## Conclusion
-
-Thank you for exploring our health tracking app. We hope it helps you achieve your fitness goals and maintain a healthy lifestyle.
 

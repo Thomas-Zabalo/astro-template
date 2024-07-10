@@ -11,71 +11,68 @@ image:
 
 Welcome to the documentation for my awesome project. This project is designed to address specific challenges and demonstrate my capabilities in web development.
 
-## Objectives
+## **Objectives**
 
-The main objectives of this project are:
 
-1. **Showcase Proficiency:** Demonstrate advanced skills in frontend and backend development.
-2. **Solve a Real-World Problem:** Address a specific challenge or improve efficiency in a particular domain.
-3. **Learn and Implement:** Experiment with new technologies and methodologies to enhance knowledge and skillset.
+- **Showcase Proficiency**: Demonstrate advanced skills in frontend and backend development.
+- **Solve a Real-World Problem**: Address a specific challenge or improve efficiency in a particular domain.
+- **Learn and Implement**: Experiment with new technologies and methodologies to enhance knowledge and skillset.
 
-## Features
+
+
+## **Features**
 
 ### Key Features
 
-- **User Authentication:** Secure login and registration system using JWT tokens.
-- **Task Management:** Efficient management of tasks with sorting, filtering, and assignment functionalities.
-- **Integration:** Integration with external APIs for real-time data updates and notifications.
-- **Responsive Design:** Responsive UI ensuring optimal user experience across devices.
+- **User Authentication**: Secure login and registration system using JWT tokens.
+- **Task Management**: Efficient management of tasks with sorting, filtering, and assignment functionalities.
+- **Integration**: Integration with external APIs for real-time data updates and notifications.
+- **Responsive Design**: Responsive UI ensuring optimal user experience across devices.
+
+
 
 ### Additional Features
 
-- **Analytics Dashboard:** Visualize data trends and insights with interactive charts and graphs.
-- **Customizable Settings:** User preferences and settings customization for enhanced usability.
-- **Collaboration Tools:** Real-time collaboration features for team projects.
+- **Analytics Dashboard** :Visualize data trends and insights with interactive charts and graphs.
+- **Customizable Settings**: User preferences and settings customization for enhanced usability.
+- **Collaboration Tools**: Real-time collaboration features for team projects.
 
-## Technology Stack
+## **Technology Stack**
 
 ### Languages and Frameworks
 
-- **Frontend:** React.js, TypeScript, Tailwind CSS
-- **Backend:** Node.js, Express.js, MongoDB
-- **APIs:** RESTful APIs for communication between frontend and backend.
+- **Frontend**: ```React.js```, ```TypeScript```,```Tailwind CSS```
+- **Backend**: ```Node.js```, ```Express.js```, ```MongoDB```
+- **APIs**: ```RESTful APIs``` for communication between frontend and backend.
+
 
 ### Tools and Libraries
 
-- **State Management:** Redux for managing complex application states.
-- **UI Components:** Material-UI for consistent and responsive UI design.
-- **Database:** MongoDB for flexible and scalable data storage.
-- **Deployment:** Docker for containerization and AWS for cloud deployment.
+- **State Management**: ```Redux``` for managing complex application states.
+- **UI Components**: ```Material-UI``` for consistent and responsive ```UI design```.
+- **Database**: ```MongoDB``` for flexible and scalable data storage.
+- **Deployment**: ```Docker``` for containerization and ```AWS``` for cloud deployment.
 
-## Architecture
+
+
+## **Architecture**
 
 ### System Architecture
 
-The project follows a microservices architecture with modular components:
-
-- **Frontend Service:** React.js components for the user interface.
-- **Backend Service:** Node.js server handling API requests and business logic.
-- **Database Service:** MongoDB database for storing and managing application data.
+- **Frontend Service**: ```React.js``` components for the user interface.
+- **Backend Service**: ```Node.js``` server handling API requests and business logic.
+- **Database Service**: ```MongoDB``` database for storing and managing application data.
 
 ### Design Patterns
 
-- **MVC Pattern:** Separation of concerns with models, views, and controllers.
-- **Middleware:** Authentication middleware for secure API endpoints.
-- **Component-Based Architecture:** Reusable and maintainable UI components.
+- **MVC Pattern**: Separation of concerns with models, views, and controllers.
+- **Middleware**: Authentication middleware for secure API endpoints.
+- **Component-Based Architecture**: Reusable and maintainable UI components.
 
-## Screenshots
 
-![Screenshot 1](/images/screenshot1.jpg)
-![Screenshot 2](/images/screenshot2.jpg)
+## **Additional Resources** 
 
-## Additional Resources
+- **GitHub Repository**: Explore the code and contribute to the project on [GitHub](https://github.com/Thomas-Zabalo/astro-template).
+- **Documentation**: Detailed documentation on project setup, usage instructions, and API endpoints.
 
-- **GitHub Repository:** Explore the code and contribute to the project on [GitHub](https://github.com/your-project).
-- **Documentation:** Detailed documentation on project setup, usage instructions, and API endpoints.
-
-## Conclusion
-
-Thank you for exploring my awesome project! If you have any questions or feedback, feel free to reach out.
 

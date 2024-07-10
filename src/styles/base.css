@@ -69,7 +69,7 @@ label {
 
 p {
   line-height: 1.5;
-  margin-block-start: 0.8em;
+  margin: 0.8em 0;
 }
 
 p a {

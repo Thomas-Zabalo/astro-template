@@ -53,21 +53,13 @@ const siteConfig: SiteConfig = {
     },
     headerNavLinks: [
         {
-            text: 'Home',
-            href: '/'
-        },
-        {
             text: 'Projects',
-            href: '/projects'
+            href: '/works'
         },
         {
             text: 'Blog',
-            href: '/blog'
+            href: '/posts'
         },
-        {
-            text: 'Tags',
-            href: '/tags'
-        }
     ],
     footerNavLinks: [
         {

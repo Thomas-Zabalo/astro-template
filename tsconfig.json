@@ -1,7 +1,8 @@
 {
   "extends": "astro/tsconfigs/base",
   "compilerOptions": {
-    "jsx": "preserve",
+    "strictNullChecks": true,
+    "allowJs": true,
     "baseUrl": ".",
     "paths": {
       "@components/*": [
@@ -12,7 +13,10 @@
       ],
       "@styles/*": [
         "src/styles/*"
-      ]
+      ],
+      "@content/*": [
+        "src/content/*"
+      ],
     }
   }
 }

@@ -5,22 +5,11 @@ const projectsCollection = defineCollection({
     schema: z.object({
       title: z.string(),
       description: z.string(),
+      date: z.string(),
       image: z.object({
-        url: z.string(),
+        src: z.string(),
         alt: z.string()
       }),
-      worksImage1: z.object({
-        url: z.string(),
-        alt: z.string()
-      }),
-      worksImage2: z.object({
-        url: z.string(),
-        alt: z.string()
-      }),
-      platform: z.string(),
-      stack: z.string(),
-      website: z.string(),
-      github: z.string(),
     })
 });
 

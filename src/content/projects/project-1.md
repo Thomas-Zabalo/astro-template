@@ -1,19 +1,81 @@
 ---
-title: 'Project 1'
-description: 'Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci'
+title: "Awesome Project"
+date: "2024-07-10"
+description: "An awesome project showcasing my skills."
 image:
-    url: '/GitHub.webp'
-    alt: 'GitHub wallpaper'
-worksImage1:
-    url: '/image-1.webp'
-    alt: 'first image of your project.'
-worksImage2:
-    url: '/image-2.webp'
-    alt: 'second image of your project.'
-platform: Web
-stack: Astro, JavaScript
-website: https://astro-milky-way.netlify.app/
-github: https://github.com/ttomczak3/Milky-Way
+  src: "/images/project.jpg"
+  alt: "Project Image"
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras faucibus a tortor at molestie. Sed pellentesque leo auctor, auctor lorem nec, venenatis risus. Vivamus commodo ipsum vitae orci finibus, vel porta nunc viverra. In hac habitasse platea dictumst. Nunc pretium, ligula ultricies consequat sollicitudin, enim ex ullamcorper nisl.
+# Awesome Project
+
+Welcome to the documentation for my awesome project. This project is designed to address specific challenges and demonstrate my capabilities in web development.
+
+## Objectives
+
+The main objectives of this project are:
+
+1. **Showcase Proficiency:** Demonstrate advanced skills in frontend and backend development.
+2. **Solve a Real-World Problem:** Address a specific challenge or improve efficiency in a particular domain.
+3. **Learn and Implement:** Experiment with new technologies and methodologies to enhance knowledge and skillset.
+
+## Features
+
+### Key Features
+
+- **User Authentication:** Secure login and registration system using JWT tokens.
+- **Task Management:** Efficient management of tasks with sorting, filtering, and assignment functionalities.
+- **Integration:** Integration with external APIs for real-time data updates and notifications.
+- **Responsive Design:** Responsive UI ensuring optimal user experience across devices.
+
+### Additional Features
+
+- **Analytics Dashboard:** Visualize data trends and insights with interactive charts and graphs.
+- **Customizable Settings:** User preferences and settings customization for enhanced usability.
+- **Collaboration Tools:** Real-time collaboration features for team projects.
+
+## Technology Stack
+
+### Languages and Frameworks
+
+- **Frontend:** React.js, TypeScript, Tailwind CSS
+- **Backend:** Node.js, Express.js, MongoDB
+- **APIs:** RESTful APIs for communication between frontend and backend.
+
+### Tools and Libraries
+
+- **State Management:** Redux for managing complex application states.
+- **UI Components:** Material-UI for consistent and responsive UI design.
+- **Database:** MongoDB for flexible and scalable data storage.
+- **Deployment:** Docker for containerization and AWS for cloud deployment.
+
+## Architecture
+
+### System Architecture
+
+The project follows a microservices architecture with modular components:
+
+- **Frontend Service:** React.js components for the user interface.
+- **Backend Service:** Node.js server handling API requests and business logic.
+- **Database Service:** MongoDB database for storing and managing application data.
+
+### Design Patterns
+
+- **MVC Pattern:** Separation of concerns with models, views, and controllers.
+- **Middleware:** Authentication middleware for secure API endpoints.
+- **Component-Based Architecture:** Reusable and maintainable UI components.
+
+## Screenshots
+
+![Screenshot 1](/images/screenshot1.jpg)
+![Screenshot 2](/images/screenshot2.jpg)
+
+## Additional Resources
+
+- **GitHub Repository:** Explore the code and contribute to the project on [GitHub](https://github.com/your-project).
+- **Documentation:** Detailed documentation on project setup, usage instructions, and API endpoints.
+
+## Conclusion
+
+Thank you for exploring my awesome project! If you have any questions or feedback, feel free to reach out.
+

@@ -1,13 +1,20 @@
 ---
-import siteConfig from "src/data/const"
+import siteConfig from "src/data/const";
 
 const hero = siteConfig.hero;
 ---
-{hero.actions && hero.actions.length > 0 && hero.actions.map((action) => (
-<div class="flex justify-center space-x-4">
-        <a
-            href={action.href}
-            class="inline-flex items-center justify-center px-6 py-2 font-serif text-sm leading-tight italic text-main bg-main border border-main rounded-3xl transition hover:bg-muted hover:bg-slate-700"
-        >{action.text}</a>
-</div>
-))}
+
+{
+    hero.actions &&
+        hero.actions.length > 0 &&
+        hero.actions.map((action) => (
+            <div class="flex justify-center space-x-4">
+                <a
+                    href={action.href}
+                    class="inline-flex items-center justify-center px-6 py-2 font-serif text-sm leading-tight italic text-main bg-main border border-main rounded-3xl transition hover:bg-muted hover:bg-slate-700"
+                >
+                    {action.text}
+                </a>
+            </div>
+        ))
+}

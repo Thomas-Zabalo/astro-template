@@ -1,12 +1,13 @@
 ---
-import { getCollection } from 'astro:content';
-import Layout from '@layouts/Layout.astro';
+import { getCollection } from "astro:content";
+import Layout from "@layouts/Layout.astro";
 
 export async function getStaticPaths() {
-    const projectEntries = await getCollection('projects');
-    return projectEntries.map(entry => ({
-        params: { slug: entry.slug }, props: { entry },
-  }));
+    const projectEntries = await getCollection("projects");
+    return projectEntries.map((entry) => ({
+        params: { slug: entry.slug },
+        props: { entry },
+    }));
 }
 
 const { entry } = Astro.props;
@@ -17,3 +18,102 @@ const { Content } = await entry.render();
     <Content />
 </Layout>
 
+<style is:global>
+    nav ul li {
+        list-style-type: none;
+        padding: 0;
+    }
+    h1 {
+        font-size: 1.875rem;
+        line-height: 1.25;
+        font-family: serif;
+        font-weight: 500;
+    }
+
+    h2 {
+        font-size: 1.2em;
+        margin-top: 1.875em;
+        margin-bottom: 1em;
+        line-height: 1.2;
+        font-weight: 800;
+    }
+    h3 {
+        text-underline-offset: 3px;
+        padding-inline-start: 3rem;
+        font-size: 1em;
+        margin-top: 1.875em;
+        margin-bottom: 1em;
+        line-height: 1.2;
+        font-weight: 800;
+    }
+
+    ol li {
+        list-style-type: decimal;
+        padding-inline-start: 20px;
+        line-height: 1.2;
+    }
+
+    ul li {
+        list-style-type: georgian;
+        padding-inline-start: 20px;
+        color: var(--color-text);
+    }
+
+    main a {
+        color: var(--color-text);
+        text-decoration: underline wavy;
+    }
+    main a:hover {
+        color: white;
+        text-decoration: underline wavy;
+    }
+    li strong {
+        color: var(--color-dot);
+        padding: 2px 5px;
+        border-radius: 4px;
+    }
+    em {
+        display: block;
+        position: relative;
+        font-style: normal;
+        font-size: 1.3em;
+        margin-block-end: var(--sp-m);
+    }
+    h2 strong {
+        position: relative;
+        padding-right: var(--sp-s);
+    }
+    h2 strong::after {
+        z-index: -2;
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 10px;
+        right: 0;
+        bottom: 0;
+        background: linear-gradient(
+            transparent 60%,
+            color-mix(in srgb, var(--color-theme) 20%, transparent) 40%
+        );
+    }
+
+    code {
+        border-radius: 2px;
+        background-color: var(--color-code);
+        padding: 1px 5px;
+        font-family: "Noto Sans",
+    }
+    @media (min-width: 640px) {
+        h1 {
+            font-size: 3rem;
+            line-height: 1.2;
+        }
+
+        h2 {
+            font-size: 1.6em;
+            margin-top: 1.875em;
+            margin-bottom: 1em;
+            line-height: 1.2;
+        }
+    }
+</style>

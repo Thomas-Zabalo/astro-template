@@ -1,8 +1,12 @@
 ---
+import siteConfig from "src/data/const";
 
+const headerNavLinks = siteConfig.headerNavLinks || [];
 ---
 
-<nav class="l-content mx-auto max-w-3xl min-h-10 pt-4 pb-12 relative sm:min-h-14 sm:pb-24 md:pt-8">
+<nav
+    class="l-content mx-auto max-w-3xl min-h-10 pt-4 pb-12 relative sm:min-h-14 sm:pb-24 md:pt-8"
+>
     <div class="w-full max-w-3xl mx-auto relative">
         <button
             class="menu-toggle w-8 h-8 -ml-1 flex items-center justify-center relative z-30 md:hidden"
@@ -17,29 +21,25 @@
                 <li class="py-1">
                     <a
                         class="text-xl font-serif text-main hover:underline hover:underline-offset-2 hover:decoration-1 md:text-base"
-                        href="/"
+                        href=`/`
                     >
-                        Portfolio
+                        Portoflio
                     </a>
                 </li>
             </div>
             <div class="menu flex gap-6">
-                <li class="py-1">
-                    <a
-                        class="text-xl font-serif text-main hover:underline hover:underline-offset-2 hover:decoration-1 md:text-base"
-                        href="/works"
-                    >
-                        Projects
-                    </a>
-                </li>
-                <li class="py-1">
-                    <a
-                        class="text-xl font-serif text-main hover:underline hover:underline-offset-2 hover:decoration-1 md:text-base"
-                        href="/posts"
-                    >
-                        Blog
-                    </a>
-                </li>
+                {
+                    headerNavLinks.map((link, index) => (
+                        <li class="py-1">
+                            <a
+                                class="text-xl font-serif text-main hover:underline hover:underline-offset-2 hover:decoration-1 md:text-base"
+                                href={link.href}
+                            >
+                                {link.text}
+                            </a>
+                        </li>
+                    ))
+                }
                 <li class="py-1 flex">
                     <a
                         class="text-xl font-serif text-main hover:underline hover:underline-offset-2 hover:decoration-1 md:text-base"
@@ -52,4 +52,3 @@
         </ul>
     </div>
 </nav>
-

@@ -1,13 +1,25 @@
 ---
 title: "Educational Platform"
+author: 
+    name: "Eclipse"
+    img: "/avatar.jpg"
+    alt: "Avatar image"
 date: "2024-07-10"
 description: "An online platform for interactive learning and course management."
 image:
-  src: "/images/educational-platform.jpg"
-  alt: "Educational Platform Image"
+  src: "/post-4.jpg"
+  alt: "Project Image"
 ---
 
+import MarkdownAuthor from "../../components/MarkdownAuthor.astro";
+export const {author, date} = frontmatter
+
 # Educational Platform
+
+<MarkdownAuthor author={author.name} date={date} />
+
+![Project preview](/post-4.jpg)
+
 
 Discover our educational platform designed to provide an interactive learning experience with advanced course management features.
 

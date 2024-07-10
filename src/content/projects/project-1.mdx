@@ -1,28 +1,34 @@
 ---
 title: "Awesome Project"
+author: 
+    name: "Eclipse"
+    img: "/avatar.jpg"
+    alt: "Avatar image"
 date: "2024-07-10"
 description: "An awesome project showcasing my skills."
 image:
-  src: "/images/project.jpg"
+  src: "/post-1.jpg"
   alt: "Project Image"
 ---
 
-![image](https://github.com/Thomas-Zabalo/astro-template/assets/150163380/83e6756d-d912-49d5-974f-f69aa311b630)
+import MarkdownAuthor from "../../components/MarkdownAuthor.astro";
+export const {author, date} = frontmatter
 
 # Awesome Project
 
+<MarkdownAuthor img={author.img} author={author.name} date={date} />
+
+![Project preview](/post-1.jpg)
+
 Welcome to the documentation for my awesome project. This project is designed to address specific challenges and demonstrate my capabilities in web development.
 
-## **Objectives**
-
+## Objectives
 
 - **Showcase Proficiency**: Demonstrate advanced skills in frontend and backend development.
 - **Solve a Real-World Problem**: Address a specific challenge or improve efficiency in a particular domain.
 - **Learn and Implement**: Experiment with new technologies and methodologies to enhance knowledge and skillset.
 
-
-
-## **Features**
+## Features
 
 ### Key Features
 
@@ -31,39 +37,34 @@ Welcome to the documentation for my awesome project. This project is designed to
 - **Integration**: Integration with external APIs for real-time data updates and notifications.
 - **Responsive Design**: Responsive UI ensuring optimal user experience across devices.
 
-
-
 ### Additional Features
 
-- **Analytics Dashboard** :Visualize data trends and insights with interactive charts and graphs.
+- **Analytics Dashboard**: Visualize data trends and insights with interactive charts and graphs.
 - **Customizable Settings**: User preferences and settings customization for enhanced usability.
 - **Collaboration Tools**: Real-time collaboration features for team projects.
 
-## **Technology Stack**
+## Technology Stack
 
 ### Languages and Frameworks
 
-- **Frontend**: ```React.js```, ```TypeScript```,```Tailwind CSS```
-- **Backend**: ```Node.js```, ```Express.js```, ```MongoDB```
-- **APIs**: ```RESTful APIs``` for communication between frontend and backend.
-
+- **Frontend**: `React.js`, `TypeScript`, `Tailwind CSS`
+- **Backend**: `Node.js`, `Express.js`, `MongoDB`
+- **APIs**: `RESTful APIs` for communication between frontend and backend.
 
 ### Tools and Libraries
 
-- **State Management**: ```Redux``` for managing complex application states.
-- **UI Components**: ```Material-UI``` for consistent and responsive ```UI design```.
-- **Database**: ```MongoDB``` for flexible and scalable data storage.
-- **Deployment**: ```Docker``` for containerization and ```AWS``` for cloud deployment.
+- **State Management**: `Redux` for managing complex application states.
+- **UI Components**: `Material-UI` for consistent and responsive UI design.
+- **Database**: `MongoDB` for flexible and scalable data storage.
+- **Deployment**: `Docker` for containerization and `AWS` for cloud deployment.
 
-
-
-## **Architecture**
+## Architecture
 
 ### System Architecture
 
-- **Frontend Service**: ```React.js``` components for the user interface.
-- **Backend Service**: ```Node.js``` server handling API requests and business logic.
-- **Database Service**: ```MongoDB``` database for storing and managing application data.
+- **Frontend Service**: `React.js` components for the user interface.
+- **Backend Service**: `Node.js` server handling API requests and business logic.
+- **Database Service**: `MongoDB` database for storing and managing application data.
 
 ### Design Patterns
 
@@ -71,10 +72,7 @@ Welcome to the documentation for my awesome project. This project is designed to
 - **Middleware**: Authentication middleware for secure API endpoints.
 - **Component-Based Architecture**: Reusable and maintainable UI components.
 
-
-## **Additional Resources** 
+## Additional Resources
 
 - **GitHub Repository**: Explore the code and contribute to the project on [GitHub](https://github.com/Thomas-Zabalo/astro-template).
 - **Documentation**: Detailed documentation on project setup, usage instructions, and API endpoints.
-
-

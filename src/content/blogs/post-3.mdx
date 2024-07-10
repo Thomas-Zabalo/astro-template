@@ -1,13 +1,25 @@
 ---
 title: "Health Tracking App"
+author: 
+    name: "Eclipse"
+    img: "/avatar.jpg"
+    alt: "Avatar image"
 date: "2024-07-10"
 description: "A mobile application for tracking health and fitness metrics."
 image:
-  src: "/images/health-app.jpg"
-  alt: "Health Tracking App Image"
+  src: "/post-3.jpg"
+  alt: "Project Image"
 ---
 
+import MarkdownAuthor from "../../components/MarkdownAuthor.astro";
+export const {author, date} = frontmatter
+
 # Health Tracking App
+
+<MarkdownAuthor author={author.name} date={date} />
+
+![Project preview](/post-3.jpg)
+
 
 Explore the documentation for our health tracking app, designed to help users monitor their health metrics and achieve fitness goals effectively.
 

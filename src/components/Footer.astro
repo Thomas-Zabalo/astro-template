@@ -1,2 +1,30 @@
 ---
+import siteConfig from "src/data/const";
+
+const socialLinks = siteConfig.socialLinks;
 ---
+
+<footer
+    class="l-content mx-auto max-w-3xl min-h-10 pt-4 pb-12 relative sm:min-h-14 sm:pb-24 md:pt-8 flex justify-center"
+>
+    <div class="center">
+        <ul class="flex gap-6 justify-center">
+            {
+                socialLinks.map((social) => (
+                    <li class="icon__btn">
+                        <a class="icon__link" href="#" target="_blank">
+                            <span class="linked-in">LinkedIn</span>
+                        </a>
+                    </li>
+                ))
+            }
+        </ul>
+        <small
+            >© 2024 Eclipse by <a
+                class="underline underline-offset-4 hover:no-underline"
+                href="https://github.com/Thomas-Zabalo">thomas-zab</a
+            >. All Rights Reserved.</small
+        >
+    </div>
+</footer>
+

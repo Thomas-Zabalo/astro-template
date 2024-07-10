@@ -4,20 +4,71 @@ interface Props {
     image: string;
     title: string;
     body: string;
+    date: string;
 }
 
-const { url, image, title, body } = Astro.props;
+const { url, title, body, date } = Astro.props;
 ---
-<li class="card">
-    <a class="card__link" href={url}>
-        <div class="center">
-            <img class="card__img" width="226" height="127" src={image} alt="ProjectImage">
+
+<li class="project-item">
+    <a class="project-link" href={url}>
+        <div class="flex gap-6">
+            <h3 class="project-title">
+                {title}
+            </h3>
+            <span class="project-date">
+                {date}
+            </span>
         </div>
-        <h3 class="card__title">
-            {title}
-        </h3>
-        <p class="card__txt">
+        <p class="project-body">
             {body}
         </p>
     </a>
 </li>
+
+<style>
+.project-item {
+    list-style: none;
+}
+
+.project-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    position: relative;
+}
+
+.project-title {
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+}
+
+.project-title::after {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: transparent;
+    border-bottom: 2px dashed currentColor;
+    transform: scaleX(0);
+    transform-origin: bottom left;
+    transition: transform 0.3s ease-out;
+}
+
+.project-link:hover .project-title::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.project-date {
+    color: var(--color-text);
+}
+
+.project-body {
+    margin-top: 0.5em;
+}
+</style>

@@ -63,18 +63,7 @@ const siteConfig: SiteConfig = {
         }
     ],
     socialLinks: [
-        {
-            text: 'Dribbble',
-            href: 'https://dribbble.com/'
-        },
-        {
-            text: 'Instagram',
-            href: 'https://instagram.com/'
-        },
-        {
-            text: 'X/Twitter',
-            href: 'https://twitter.com/'
-        }
+       
     ],
     hero: {
         title: 'Showcasing My Work: A Journey in Web Development',

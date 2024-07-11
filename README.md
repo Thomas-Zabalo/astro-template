@@ -10,13 +10,13 @@ Eclipse is a modern web development template built with Astro, MDX, and Tailwind
 
 ## Features
 
-- **Project Showcase**: A dedicated section to showcase various projects with detailed descriptions and attractive visuals.
+- [x] **Project Showcase**: A dedicated section to showcase various projects with detailed descriptions and attractive visuals.
   
-- **Fully Functional Blog**: Includes a blog to share ideas, tutorials, and updates.
+- [x] **Fully Functional Blog**: Includes a blog to share ideas, tutorials, and updates.
   
-- **About Section**: Presents your professional profile, skills, and career journey.
+- [x] **About Section**: Presents your professional profile, skills, and career journey.
   
-- **SEO Friendly**: Optimized for search engines to ensure better visibility.
+- [x] **SEO Friendly**: Optimized for search engines to ensure better visibility.
 
 ## Technologies Used
 
@@ -25,7 +25,8 @@ Eclipse is a modern web development template built with Astro, MDX, and Tailwind
 - **MDX**: For easily creating and integrating content.
   
 - **Tailwind CSS**: For beautiful and responsive UI design.
-![Uploading Eclipse-lighthouse-score.svg…]()
+  
+[![Eclipse-lighthouse-score](https://github.com/user-attachments/assets/82cdaeba-e4f1-4a80-9dd3-7a98c7164e73)]([https://pagespeed.web.dev/analysis/https-astro-i18n-starter-pages-dev-en/8sg3q21r6c?form_factor=desktop](https://pagespeed.web.dev/analysis/https-astro-template-six-vercel-app/qi7p4tmx7i?form_factor=desktop&category=performance&category=accessibility&category=best-practices&category=seo&hl=fr&utm_source=lh-chrome-ext) "Check score")
 
 ## Installation
 

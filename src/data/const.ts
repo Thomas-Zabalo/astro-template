@@ -42,6 +42,10 @@ const siteConfig: SiteConfig = {
     },
     headerNavLinks: [
         {
+            text: 'About',
+            href: '/about'
+        },
+        {
             text: 'Projects',
             href: '/works'
         },
@@ -51,10 +55,6 @@ const siteConfig: SiteConfig = {
         },
     ],
     footerNavLinks: [
-        {
-            text: 'About',
-            href: '/about'
-        },
         {
             text: 'Markdown style',
             href: '/markdown'

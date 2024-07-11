@@ -25,7 +25,8 @@ Eclipse is a modern web development template built with Astro, MDX, and Tailwind
 - **MDX**: For easily creating and integrating content.
   
 - **Tailwind CSS**: For beautiful and responsive UI design.
-![Uploading Eclipse-lighthouse-score.svg…]()
+  
+https://pagespeed.web.dev/analysis/https-astro-template-six-vercel-app/qi7p4tmx7i?form_factor=desktop&category=performance&category=accessibility&category=best-practices&category=seo&hl=fr&utm_source=lh-chrome-ext
 
 ## Installation
 

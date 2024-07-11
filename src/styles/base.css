@@ -8,18 +8,17 @@
 
 :root {
   @media (prefers-color-scheme: dark) {
-    --color-speciality: hsl(224, 10%, 23%);
-    --color-dot: hsl(220, 8%, 93%);
-    --color-text: hsl(224, 6%, 77%);
-    --color-code: hsl(224, 10%, 23%);
-    --color-theme: #1aefba;
-    --color-button: #1aef5a;
-    --color-accent: #67bc17;
-    --color-ambient: #3d573f;
-    --color-base: hsl(224, 10%, 10%);
-    ;
-    --color-main: #faf6f6;
-    --color-caution: #FFAA2B;
+    --color-speciality: #1b1b2f; 
+    --color-dot: #4e4e50; 
+    --color-text: #ffffff; 
+    --color-code: #1b1b2f; 
+    --color-theme: #1aefba; 
+    --color-button: #2391ad;
+    --color-accent: #6b6b83; 
+    --color-ambient: #59825d; 
+    --color-base: #151b1a;
+    --color-main: #faf6f6; 
+    --color-caution: #FFAA2B; 
   }
 
   --sp-l: 64px;
@@ -65,22 +64,9 @@ label {
   line-height: 1.4;
 }
 
-
-
-p {
-  line-height: 1.5;
-  margin: 0.8em 0;
-}
-
-p a {
-  color: var(--color-theme);
-  text-decoration: underline;
-}
-
 a,
 button {
   transition: 0.2s ease-out;
-
   &:hover,
   &:active {
     transition: 0.2s ease-out;
@@ -91,4 +77,8 @@ svg,
 path {
   fill: currentColor;
   aspect-ratio: 1;
+}
+
+span{
+  color: var(--color-dot);
 }

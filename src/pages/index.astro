@@ -1,8 +1,6 @@
 ---
 import Layout from "@layouts/Layout.astro";
 import Hero from "@components/Hero.astro";
-import Subtitle from "@components/Subtitle.astro";
-import Button from "@components/Button.astro";
 import Card from "@components/Card.astro";
 import { getCollection } from "astro:content";
 const projects = await getCollection("projects");
@@ -14,64 +12,50 @@ const lastblogs = blogs.slice(0, 4);
 <Layout title="Welcome to Astro." description="e">
 	<main>
 		<Hero />
+		{
+			projects?.length > 0 && (
+				<>
+					<div class="mb-14 sm:mb-16">
+						<h2 class="mb-12 text-xl font-serif italic sm:mb-16 sm:text-2xl">
+							Projects
+						</h2>
 
-		<Subtitle title="About" />
-		<p>
-			Welcome to my portfolio website! I am passionate about creating
-			innovative solutions that solve real-world problems. My journey in
-			web development has been marked by a commitment to excellence and
-			continuous learning. I thrive in collaborative environments where
-			creativity and technical expertise come together to build remarkable
-			digital experiences.
-		</p>
-		<p>
-			Throughout my career, I have embraced new technologies and
-			methodologies to deliver high-quality products. From designing
-			intuitive user interfaces to optimizing backend systems, I strive to
-			achieve both aesthetic appeal and functional efficiency. I believe
-			in the power of technology to transform industries and improve
-			lives.
-		</p>
-		<Button />
-
-		<Subtitle title="Projects" />
-		<ul role="list" class="grid gap-8 grid-cols-1">
-			{
-				lastprojects.map((project) => (
-					<Card
-						url={`/blogs/${project.slug}/`}
-						image={project.data.image.src}
-						title={project.data.title}
-						body={project.data.description}
-						date={project.data.date}
-					/>
-				))
-			}
-		</ul>
-		<Subtitle title="blog" />
-		<ul role="list" class="grid gap-8 grid-cols-1">
-			{
-				lastblogs.map((blog) => (
-					<Card
-						url={`/blogs/${blog.slug}/`}
-						image={blog.data.image.src}
-						title={blog.data.title}
-						body={blog.data.description}
-						date={blog.data.date}
-					/>
-				))
-			}
-		</ul>
+						<ul role="list" class="grid gap-8 grid-cols-1">
+							{lastprojects.map((project) => (
+								<Card
+									url={`/projects/${project.slug}/`}
+									image={project.data.image.src}
+									title={project.data.title}
+									body={project.data.description}
+									date={project.data.date}
+								/>
+							))}
+						</ul>
+					</div>
+				</>
+			)
+		}
+		{
+			blogs?.length > 0 && (
+				<>
+					<div class="mb-14 sm:mb-16">
+						<h2 class="mb-12 text-xl font-serif italic sm:mb-16 sm:text-2xl">
+							Blogs
+						</h2>
+						<ul role="list" class="grid gap-8 grid-cols-1">
+							{lastblogs.map((blog) => (
+								<Card
+									url={`/blogs/${blog.slug}/`}
+									image={blog.data.image.src}
+									title={blog.data.title}
+									body={blog.data.description}
+									date={blog.data.date}
+								/>
+							))}
+						</ul>
+					</div>
+				</>
+			)
+		}
 	</main>
 </Layout>
-
-<style>
-	p::first-letter {
-		text-transform: capitalize;
-		font-size: 1.5rem;
-		font-weight: bold;
-		color: var(--color-theme);
-		padding-left: 42px;
-		line-height: 1.2;
-	}
-</style>

@@ -12,13 +12,14 @@ image:
 ---
 
 import MarkdownAuthor from "../../components/MarkdownAuthor.astro";
-export const {author, date} = frontmatter
+import MarkdownImages from "../../components/MarkdownImages.astro";
+export const {author, date, image} = frontmatter
 
 # E-commerce Platform
 
 <MarkdownAuthor img={author.img} author={author.name} date={date} />
 
-![Project preview](/post-2.jpg)
+<MarkdownImages src={image.src} alt={image.alt} />
 
 Welcome to the documentation for our scalable e-commerce platform. This project aims to revolutionize online shopping experiences with advanced features and robust architecture.
 

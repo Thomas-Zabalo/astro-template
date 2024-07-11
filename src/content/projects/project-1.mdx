@@ -12,7 +12,8 @@ image:
 ---
 
 import MarkdownAuthor from "../../components/MarkdownAuthor.astro";
-export const {author, date} = frontmatter
+import MarkdownImages from "../../components/MarkdownImages.astro";
+export const {author, date, image} = frontmatter
 
 # Awesome Project
 
@@ -20,7 +21,7 @@ export const {author, date} = frontmatter
 
 Welcome to the documentation for my awesome project. This project is designed to address specific challenges and demonstrate my capabilities in web development.
 
-![Project preview](/post-1.jpg)
+<MarkdownImages src={image.src} alt={image.alt} />
 
 ## Objectives
 

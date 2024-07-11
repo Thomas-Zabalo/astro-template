@@ -12,13 +12,14 @@ image:
 ---
 
 import MarkdownAuthor from "../../components/MarkdownAuthor.astro";
-export const {author, date} = frontmatter
+import MarkdownImages from "../../components/MarkdownImages.astro";
+export const {author, date, image} = frontmatter
 
 # The Evolution of Digital Marketing Strategies
 
 <MarkdownAuthor img={author.img} author={author.name} date={date} />
 
-![Digital Marketing Blog Image](/blog-4.jpg)
+<MarkdownImages src={image.src} alt={image.alt} />
 
 Digital marketing has undergone significant transformations in recent years, driven by technological advancements and changing consumer behaviors. This article delves into the evolution of digital marketing strategies and emerging trends shaping the industry landscape.
 

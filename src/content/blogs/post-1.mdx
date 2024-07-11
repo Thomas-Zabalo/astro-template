@@ -12,13 +12,14 @@ image:
 ---
 
 import MarkdownAuthor from "../../components/MarkdownAuthor.astro";
-export const {author, date} = frontmatter
+import MarkdownImages from "../../components/MarkdownImages.astro";
+export const {author, date, image} = frontmatter
 
 # The Future of Artificial Intelligence in Business
 
 <MarkdownAuthor img={author.img} author={author.name} date={date} />
 
-![AI Blog Image](/blog-1.jpg)
+<MarkdownImages src={image.src} alt={image.alt} />
 
 Artificial Intelligence (AI) is revolutionizing how businesses operate, offering unprecedented opportunities for efficiency and innovation. In this article, we explore the transformative impact of AI technologies across various industries.
 

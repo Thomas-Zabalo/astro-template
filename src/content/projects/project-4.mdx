@@ -12,13 +12,14 @@ image:
 ---
 
 import MarkdownAuthor from "../../components/MarkdownAuthor.astro";
-export const {author, date} = frontmatter
+import MarkdownImages from "../../components/MarkdownImages.astro";
+export const {author, date, image} = frontmatter
 
 # Educational Platform
 
 <MarkdownAuthor img={author.img} author={author.name} date={date} />
 
-![Project preview](/post-4.jpg)
+<MarkdownImages src={image.src} alt={image.alt} />
 
 
 Discover our educational platform designed to provide an interactive learning experience with advanced course management features.

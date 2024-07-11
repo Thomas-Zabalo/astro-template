@@ -12,13 +12,14 @@ image:
 ---
 
 import MarkdownAuthor from "../../components/MarkdownAuthor.astro";
-export const {author, date} = frontmatter
+import MarkdownImages from "../../components/MarkdownImages.astro";
+export const {author, date, image} = frontmatter
 
 # The Rise of Remote Work: Trends and Challenges
 
 <MarkdownAuthor img={author.img} author={author.name} date={date} />
 
-![Remote Work Blog Image](/blog-2.jpg)
+<MarkdownImages src={image.src} alt={image.alt} />
 
 Remote work has rapidly transformed from a trend to a necessity for many organizations worldwide. This article explores the key trends, challenges, and opportunities associated with remote work in today's digital age.
 

@@ -10,13 +10,13 @@ Eclipse is a modern web development template built with Astro, MDX, and Tailwind
 
 ## Features
 
-- **Project Showcase**: A dedicated section to showcase various projects with detailed descriptions and attractive visuals.
+- [x] **Project Showcase**: A dedicated section to showcase various projects with detailed descriptions and attractive visuals.
   
-- **Fully Functional Blog**: Includes a blog to share ideas, tutorials, and updates.
+- [x] **Fully Functional Blog**: Includes a blog to share ideas, tutorials, and updates.
   
-- **About Section**: Presents your professional profile, skills, and career journey.
+- [x] **About Section**: Presents your professional profile, skills, and career journey.
   
-- **SEO Friendly**: Optimized for search engines to ensure better visibility.
+- [x] **SEO Friendly**: Optimized for search engines to ensure better visibility.
 
 ## Technologies Used
 

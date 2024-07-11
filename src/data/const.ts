@@ -22,6 +22,9 @@ export type Hero = {
 
 
 export type SiteConfig = {
+    title: string;
+    subtitle?: string;
+    description: string;
     image?: Image;
     headerNavLinks?: Link[];
     footerNavLinks?: Link[];
@@ -30,6 +33,13 @@ export type SiteConfig = {
 };
 
 const siteConfig: SiteConfig = {
+    title: 'Eclipse',
+    subtitle: 'Minimal Astro.js theme',
+    description: 'Explore the Eclipse Astro Template, a versatile theme crafted with Astro.js and Tailwind CSS, ideal for blogs and portfolios.',
+    image: {
+        src: '/ogp.png',
+        alt: 'Eclipse - Astro.js and Tailwind CSS theme'
+    },
     headerNavLinks: [
         {
             text: 'Projects',

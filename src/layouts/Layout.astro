@@ -11,6 +11,8 @@ import Footer from "@components/Footer.astro";
 import "@styles/global.css";
 
 import { SITE_TITLE, SITE_DESCRIPTION, X_ACCOUNT } from "../data/const";
+import siteConfig from "../data/const";
+const canonicalURL = new URL(Astro.request.url, Astro.site);
 ---
 
 <!doctype html>
@@ -25,8 +27,8 @@ import { SITE_TITLE, SITE_DESCRIPTION, X_ACCOUNT } from "../data/const";
 	
 		<!-- icon -->
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<link rel="icon" sizes="192x192" href="/android-chrome.png" />
-		<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+		<link rel="icon" sizes="192x192" href="/favicon.svg" />
+		<link rel="apple-touch-icon" sizes="180x180" href="/favicon.svg" />
 		<meta name="color-scheme" content="light dark" />
 	
 		<!-- OGP -->
@@ -34,8 +36,11 @@ import { SITE_TITLE, SITE_DESCRIPTION, X_ACCOUNT } from "../data/const";
 		<meta property="og:title" content={title ? title : SITE_TITLE} />
 		<meta property="og:site_name" content={SITE_TITLE} />
 		<meta property="og:description" content={description ? description : SITE_DESCRIPTION} />
-		<meta property="og:image" content={Astro.site + "ogp.png"} />
-		<meta property="og:url" content={Astro.url} />
+		<meta property="og:url" content="https://astro-template-six.vercel.app/" />
+		<meta property="og:title" content={title} />
+		<meta property="og:description" content={description} />
+		<meta property="og:image" content={siteConfig.image?.src} />
+		<meta property="og:image:alt" content={siteConfig.image?.alt} />
 		<meta property="og:locale" content="en_US" />
 	
 		<!-- Twitter -->
@@ -43,7 +48,8 @@ import { SITE_TITLE, SITE_DESCRIPTION, X_ACCOUNT } from "../data/const";
 		<meta name="twitter:site" content={X_ACCOUNT} />
 		<meta name="twitter:title" content={title ? title : SITE_TITLE} />
 		<meta name="twitter:description" content={description ? description : SITE_DESCRIPTION} />
-		<meta name="twitter:image" content={Astro.site + "ogp.png"} />
+		<meta name="twitter:image" content={siteConfig.image?.src} />
+		<meta name="twitter:image:alt" content={siteConfig.image?.alt} />
 
 		<ViewTransitions />
 	</head>

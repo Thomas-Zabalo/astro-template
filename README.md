@@ -1,7 +1,7 @@
 # Eclipse Starter
 
 ```bash
-npm create astro@latest -- --template psephopaiktes/astro-i18n-starter
+npm create astro@latest -- --template Thomas-Zabalo/astro-template
 ```
 
 ![Eclipse ogp](https://github.com/user-attachments/assets/7d594da9-68e7-43e4-8856-300fc5cb70df)

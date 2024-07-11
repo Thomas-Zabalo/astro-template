@@ -7,6 +7,7 @@ interface Props {
 const { title, description } = Astro.props;
 import { ViewTransitions } from "astro:transitions";
 import Header from "@components/Nav.astro";
+import  SpeedInsights  from "@vercel/speed-insights/astro"
 import Footer from "@components/Footer.astro";
 import "@styles/global.css";
 
@@ -52,6 +53,7 @@ const canonicalURL = new URL(Astro.request.url, Astro.site);
 		<meta name="twitter:image:alt" content={siteConfig.image?.alt} />
 
 		<ViewTransitions />
+		<SpeedInsights />
 	</head>
 	
 	<body class="l-body">

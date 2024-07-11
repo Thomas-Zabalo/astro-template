@@ -15,7 +15,9 @@ const { Content } = await entry.render();
 ---
 
 <Layout title={entry.data.title} description={entry.data.description}>
-    <Content />
+    <article>
+        <Content />
+    </article>
 </Layout>
 
 <style is:global>

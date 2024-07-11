@@ -1,7 +1,7 @@
 # Eclipse Starter
 
 ```bash
-npm create astro@latest -- --template psephopaiktes/astro-i18n-starter
+npm create astro@latest -- --template Thomas-Zabalo/astro-template
 ```
 
 ![Eclipse ogp](https://github.com/user-attachments/assets/7d594da9-68e7-43e4-8856-300fc5cb70df)
@@ -25,6 +25,7 @@ Eclipse is a modern web development template built with Astro, MDX, and Tailwind
 - **MDX**: For easily creating and integrating content.
   
 - **Tailwind CSS**: For beautiful and responsive UI design.
+![Uploading Eclipse-lighthouse-score.svg…]()
 
 ## Installation
 
@@ -59,6 +60,7 @@ The project structure is organized as follows:
 - **`/src`**: Contains all source files for the project.
   - **`/components`**: Reusable UI components.
   - **`/pages`**: Pages of the application.
+  - **`/content`**: Content of the application.
   - **`/data`**: Data files such as configuration or constants.
 - **`/public`**: Static assets like images and fonts.
 - **`/styles`**: Global styles and Tailwind CSS configuration.
@@ -67,7 +69,7 @@ The project structure is organized as follows:
 
 MDX is used in Eclipse for creating dynamic content. MDX allows you to write JSX in Markdown documents, making it easy to embed React components alongside Markdown content. Here's how MDX is used:
 
-- **Create MDX files** in the `/src/pages` or `/src/blog` directories.
+- **Create MDX files** in the `/src/pages` or `/src/content/*` directories.
 - Use Markdown syntax for text formatting.
 - Embed React components directly within the Markdown content for interactive elements.
 

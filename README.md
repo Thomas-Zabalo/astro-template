@@ -1,9 +1,3 @@
-Bien sûr ! Voici un exemple de fichier README pour votre projet Eclipse, en anglais :
-
----
-
-# Eclipse
-
 ![Eclipse ogp](https://github.com/user-attachments/assets/7d594da9-68e7-43e4-8856-300fc5cb70df)
 
 Eclipse is a modern web development template built with Astro, MDX, and Tailwind CSS. It is designed for creating elegant and high-performance online portfolios.
@@ -78,7 +72,3 @@ Contributions to Eclipse are welcome! If you have any ideas, improvements, or bu
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](/path/to/LICENSE) file for details.
-
----
-
-Assurez-vous de personnaliser les chemins d'accès aux images, au logo, au fichier de licence (LICENSE), et d'autres détails spécifiques à votre projet. Ce README fournit une base solide pour les utilisateurs et les contributeurs potentiels de votre projet Eclipse.

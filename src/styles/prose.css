@@ -110,6 +110,7 @@
 }
 
 .prose h1 {
+  text-align: center;
   font-weight: 800;
   font-size: 2.25em;
   margin-top: 0;
@@ -388,6 +389,7 @@
 }
 
 .prose-sm h1 {
+  text-align: center;
   font-size: 2.1428571em;
   margin-top: 0;
   margin-bottom: 0.8em;

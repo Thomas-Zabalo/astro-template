@@ -1,3 +1,9 @@
+Eclipse Starter
+
+```bash
+npm create astro@latest -- --template psephopaiktes/astro-i18n-starter
+```
+
 ![Eclipse ogp](https://github.com/user-attachments/assets/7d594da9-68e7-43e4-8856-300fc5cb70df)
 
 Eclipse is a modern web development template built with Astro, MDX, and Tailwind CSS. It is designed for creating elegant and high-performance online portfolios.

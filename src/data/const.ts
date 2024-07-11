@@ -1,8 +1,6 @@
-export const SITE_NAME = "Template Portfolio"
-
-export const SITE_DESCRIPTION = "Template Portfolio"
-
-export const CREATEUR = "Template Portfolio"
+export const SITE_TITLE: string = "Eclipse Astro Template";
+export const SITE_DESCRIPTION: string = "Explore the Eclipse Astro Template, a versatile theme crafted with Astro.js and Tailwind CSS, ideal for blogs and portfolios.";
+export const X_ACCOUNT: string = "@zab_thomas";
 
 export type Image = {
     src: string;

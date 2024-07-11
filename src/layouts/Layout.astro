@@ -1,7 +1,7 @@
 ---
 interface Props {
-	title: string;
-	description: string;
+	title?: string;
+	description?: string;
 }
 
 const { title, description } = Astro.props;
@@ -9,41 +9,52 @@ import { ViewTransitions } from "astro:transitions";
 import Header from "@components/Nav.astro";
 import Footer from "@components/Footer.astro";
 import "@styles/global.css";
+
+import { SITE_TITLE, SITE_DESCRIPTION, X_ACCOUNT } from "../data/const";
 ---
 
 <!doctype html>
 <html lang="en">
 	<head>
 		<meta charset="UTF-8" />
-		<meta name="description" content={description} />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<title>{title ? title : SITE_TITLE}</title>
+		<meta name="description" content={description ? description : SITE_DESCRIPTION} />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="sitemap" href="/sitemap-index.xml" />
 		<meta name="generator" content={Astro.generator} />
-		<title>{title}</title>
+	
+		<!-- icon -->
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<link rel="icon" sizes="192x192" href="/android-chrome.png" />
+		<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+		<meta name="color-scheme" content="light dark" />
+	
+		<!-- OGP -->
+		<meta property="og:type" content="website" />
+		<meta property="og:title" content={title ? title : SITE_TITLE} />
+		<meta property="og:site_name" content={SITE_TITLE} />
+		<meta property="og:description" content={description ? description : SITE_DESCRIPTION} />
+		<meta property="og:image" content={Astro.site + "ogp.png"} />
+		<meta property="og:url" content={Astro.url} />
+		<meta property="og:locale" content="en_US" />
+	
+		<!-- Twitter -->
+		<meta name="twitter:card" content="summary" />
+		<meta name="twitter:site" content={X_ACCOUNT} />
+		<meta name="twitter:title" content={title ? title : SITE_TITLE} />
+		<meta name="twitter:description" content={description ? description : SITE_DESCRIPTION} />
+		<meta name="twitter:image" content={Astro.site + "ogp.png"} />
+
 		<ViewTransitions />
 	</head>
+	
 	<body class="l-body">
 		<Header />
+
 		<main class="l-content mx-auto max-w-3xl">
 			<slot />
 		</main>
+
 		<Footer />
-	</body><style is:global>
-		:root {
-			--accent: 136, 58, 234;
-			--accent-light: 224, 204, 250;
-			--accent-dark: 49, 10, 101;
-			--accent-gradient: linear-gradient(
-				45deg,
-				rgb(var(--accent)),
-				rgb(var(--accent-light)) 30%,
-				white 60%
-			);
-		}
-		html {
-			font-family: system-ui, sans-serif;
-			background: #13151a;
-			background-size: 224px;
-		}
-	</style>
+	</body>
 </html>

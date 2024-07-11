@@ -1,4 +1,4 @@
-Eclipse Starter
+# Eclipse Starter
 
 ```bash
 npm create astro@latest -- --template psephopaiktes/astro-i18n-starter

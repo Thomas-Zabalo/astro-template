@@ -1,5 +1,5 @@
 /* Reset CSS */
-/* Lien vers le créateur de ce Reset CSS : "https://github.com/psephopaiktes/astro-i18n-starter/blob/main/src/styles/reset.css" */
+/* Link to the creator of this Reset CSS: "https://github.com/psephopaiktes/astro-i18n-starter/blob/main/src/styles/reset.css" */
 
 *,
 *::before,
@@ -52,7 +52,6 @@ a {
   text-decoration-skip-ink: none;
   color: currentColor;
   text-decoration: none;
-  word-break: break-all;
 }
 
 p a {

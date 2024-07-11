@@ -1,23 +1,37 @@
 ---
+import Button from "@components/Button.astro";
+
+import siteConfig from "../data/const";
+
+const hero = siteConfig.hero;
 ---
 
 <section class="w-full flex flex-col gap-8">
     <h1
         class="text-3xl leading-tight font-serif font-medium sm:text-5xl sm:leading-tight"
     >
-    Showcasing My Work: A Journey in Web Development
+        {hero?.title}
     </h1>
 
     <figure>
         <img
             class="w-full"
-            src="/hero.jpg"
+            src={hero?.image?.src}
             loading="lazy"
             decoding="async"
-            alt="A person sitting at a desk in front of a computer at work"
+            alt={hero?.image?.alt}
         />
-        <figcaption class="mt-1.5 text-xs sm:text-sm"></figcaption>
+        <figcaption
+            class="mt-1.5 text-xs sm:text-sm text-center italic text-gray-600"
+        >
+            {hero?.image?.caption}
+        </figcaption>
     </figure>
+
+    <div class="mb-14 sm:mb-16">
+        <p class="mb-14 sm:mb-16">
+            {hero?.text}
+        </p>
+        <Button />
+    </div>
 </section>
-
-

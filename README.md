@@ -80,4 +80,4 @@ Contributions to Eclipse are welcome! If you have any ideas, improvements, or bu
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE](https://github.com/Thomas-Zabalo/astro-template/tree/main?tab=MIT-1-ov-file) file for details.
+This project is licensed under the MIT License - see the [LICENSE](https://github.com/Thomas-Zabalo/astro-template/blob/main/LICENSE) file for details.

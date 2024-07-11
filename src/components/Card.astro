@@ -21,18 +21,18 @@ function truncateTitle(title: string, maxLength: number): string {
 <li class="list-none">
     <a class="project-link" href={url}>
         <div class="flex gap-6 justify-between">
-            <h2
+            <h3
                 class="project-title text-xl leading-tight font-serif font-medium group-hover:underline group-hover:decoration-dashed group-hover:underline-offset-4 group-hover:decoration-1 sm:text-2xl"
             >
                 {truncateTitle(title, 30)}
-            </h2>
+            </h3>
             <span class="hidden sm:block">
                 {date}
             </span>
         </div>
-        <p class="mt-1 text-sm leading-normal">
+        <div class="mt-1 text-sm leading-normal">
             {body}
-        </p>
+        </div>
     </a>
 </li>
 

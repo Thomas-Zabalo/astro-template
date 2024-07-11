@@ -6,13 +6,9 @@ const headerNavLinks = siteConfig.headerNavLinks || [];
 
 <nav class="l-content mx-auto max-w-3xl min-h-10 pt-4 pb-12 relative sm:min-h-14 sm:pb-24 md:pt-8">
     <div class="w-full max-w-3xl mx-auto relative flex items-center justify-between">
-        <ul id="menu-items" class="flex gap-6">
-            <li class="py-1">
                 <a class="text-xl font-serif text-main hover:underline hover:underline-offset-2 hover:decoration-1 md:text-base" href="/">
                     Portfolio
                 </a>
-            </li>
-        </ul>
         <ul id="menu-items" class="flex gap-6">
             {headerNavLinks.map((link) => (
                 <li class="py-1">
